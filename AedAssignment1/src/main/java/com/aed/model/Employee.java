@@ -2,6 +2,7 @@
 package com.aed.model;
 
 import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -21,7 +22,7 @@ public class Employee {
     private String teamInfo;
     private String positionTitle;
     private Contact_Info contactInfo;
-    private Image photo;
+    private ImageIcon photo;
 
 	/*
 	 * URL iconURL = new URL(""); // iconURL is null when not found ImageIcon icon =
@@ -30,7 +31,7 @@ public class Employee {
 
     public Employee(int employeeID, String name, int age, String gender,
                 String startDate, String level, String teamInfo, 
-                String positionTitle, Contact_Info contactInfo) {
+                String positionTitle, Contact_Info contactInfo,ImageIcon photo) {
         this.name = name;
         this.employeeID = employeeID;
         this.age = age;
@@ -49,21 +50,21 @@ public class Employee {
      * @param args
      */
 
-	public Employee(int employeeID, String name, int age, 
-                String startDate, String level, String teamInfo, 
-                String positionTitle, Contact_Info contactInfo){
-		super();
-		this.employeeID = employeeID;
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-		this.startDate = startDate;
-		this.level = level;
-		this.teamInfo = teamInfo;
-		this.positionTitle = positionTitle;
-		this.contactInfo = contactInfo;
-                
-	}
+//	public Employee(int employeeID, String name, int age, 
+//                String startDate, String level, String teamInfo, 
+//                String positionTitle, Contact_Info contactInfo,ImageIcon photo ){
+//		super();
+//		this.employeeID = employeeID;
+//		this.name = name;
+//		this.age = age;
+//		this.gender = gender;
+//		this.startDate = startDate;
+//		this.level = level;
+//		this.teamInfo = teamInfo;
+//		this.positionTitle = positionTitle;
+//		this.contactInfo = contactInfo;
+//                this.photo = photo;
+//        }
 
 	public String getName() {
 		return name;
@@ -137,11 +138,11 @@ public class Employee {
 		this.contactInfo = contactInfo;
 	}
 
-	public Image getPhoto() {
+	public ImageIcon getPhoto() {
 		return photo;
 	}
 
-	public void setPhoto(Image photo) {
+	public void setPhoto(ImageIcon photo) {
 		this.photo = photo;
 	}
 

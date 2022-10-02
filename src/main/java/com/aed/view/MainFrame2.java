@@ -589,8 +589,8 @@ public class MainFrame2 extends javax.swing.JFrame {
         }    
         String strDate = dateField.getText();
         if(strDate.equals("")){
-            JOptionPane.showMessageDialog(this,"Please enter date in ");
-                    //+ "MM/DD/YYYY format");
+            JOptionPane.showMessageDialog(this,"Please enter date in "
+                    + "MM/DD/YYYY format");
 
         }
         SimpleDateFormat sdfrmt = new SimpleDateFormat("MM/dd/yyyy");
